@@ -196,7 +196,7 @@ sepal length,sepal width,petal length,petal width,class
       <div id="tree" class="pure-u-1"></div>
     </div>
     <script src="//d3js.org/d3.v4.min.js"></script>
-    <script src="../dist/dts.js"></script>
+    <script src="//rawgit.com/hyusuk/dtsjs/master/dist/dts.js"></script>
     <script>
       function maybeNumber(s) {
         if (!isNaN(s)) {
@@ -235,7 +235,6 @@ sepal length,sepal width,petal length,petal width,class
         document.getElementById('tree').innerHTML = '';
         var clf = new dtsjs.DecisionTreeClassifier();
         clf = clf.fit(X, y)
-        console.log(clf.exportTreeAsJSON());
 
         // Convert dtsjs tree into d3 hierarchy format
         function tree2hierarchy(tree) {
@@ -260,7 +259,6 @@ sepal length,sepal width,petal length,petal width,class
         }
 
         var treeData = tree2hierarchy(clf.exportTreeAsJSON());
-        console.log(treeData);
         function nodeType2color(type) {
           if (type === 'left') {
             return 'green';

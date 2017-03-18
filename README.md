@@ -1,4 +1,4 @@
-dtsjs
+dtsjs    [![Build Status](https://travis-ci.org/hyusuk/dtsjs.svg?branch=master)](https://travis-ci.org/hyusuk/dtsjs)
 =====
 
 dtsjs(Decision Trees JS) is an implementation of ID3 decision tree algorithm.
@@ -13,7 +13,7 @@ Demo
 Usage
 =====
 
-```
+```javascript
 <script src="./dist/dts.js"></script>
 <script>
   var X = [

@@ -1,0 +1,23 @@
+{
+  "name": "dtsjs",
+  "description": "An implementation of ID3 decision tree algorithm",
+  "version": "0.1.0",
+  "author": "Yusuke Hanada",
+  "scripts": {
+    "build": "./node_modules/.bin/webpack",
+    "lint": "./node_modules/.bin/eslint src tests",
+    "test": "./node_modules/.bin/mocha tests"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.0.0",
+    "babel-loader": "^6.0.0",
+    "babel-preset-latest": "^6.0.0",
+    "eslint": "^3.17.1",
+    "eslint-config-standard": "^7.0.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^2.1.1",
+    "mocha": "^3.2.0",
+    "webpack": "^2.2.0"
+  }
+}
